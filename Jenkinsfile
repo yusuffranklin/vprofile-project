@@ -11,7 +11,7 @@ pipeline {
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "172.31.47.182:8081"
         NEXUS_REPOSITORY = "vprofile-release"
-	    NEXUS_REPOGRP_ID    = "vpro-maven-group"
+	NEXUS_REPOGRP_ID    = "vpro-maven-group"
         NEXUS_CREDENTIAL_ID = "nexusserverlogin"
         ARTVERSION = "${env.BUILD_ID}"
         SNAP-REPO=vprofile-snapshot
@@ -38,13 +38,13 @@ pipeline {
             }
         }
 
-	    stage('UNIT TEST'){
+	stage('UNIT TEST'){
             steps {
                 sh 'mvn test'
             }
         }
 
-	    stage('INTEGRATION TEST'){
+	stage('INTEGRATION TEST'){
             steps {
                 sh 'mvn verify -DskipUnitTests'
             }
