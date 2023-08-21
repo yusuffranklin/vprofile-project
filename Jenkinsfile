@@ -18,7 +18,7 @@ pipeline {
 	
     stages{
         
-	/*
+	
         stage('BUILD'){
             steps {
                 sh 'mvn clean install -DskipTests'
@@ -30,7 +30,7 @@ pipeline {
                 }
             }
         }
-	*/
+	
 
 	stage('UNIT TEST'){
             steps {
