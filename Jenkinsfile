@@ -12,7 +12,7 @@ pipeline {
         NEXUS_URL = "172.31.47.182:8081"
         NEXUS_REPOSITORY = "vprofile-release"
 	NEXUS_REPOGRP_ID    = "vpro-maven-group"
-        NEXUS_CREDENTIAL_ID = "nexusserverlogin"
+        NEXUS_CREDENTIAL_ID = "nexusserverLogin"
         ARTVERSION = "${env.BUILD_ID}"
     }
 	
