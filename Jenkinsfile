@@ -14,6 +14,14 @@ pipeline {
 	    NEXUS_REPOGRP_ID    = "vpro-maven-group"
         NEXUS_CREDENTIAL_ID = "nexusserverlogin"
         ARTVERSION = "${env.BUILD_ID}"
+        SNAP-REPO=vprofile-snapshot
+        NEXUS-USER="admin"
+        NEXUS-PASS="password"
+        RELEASE-REPO="vprofile-release"
+        CENTRAL-REPO="vpro-maven-central"
+        NEXUS-GRP-REPO="vpro-maven-group"
+        NEXUSIP="172.31.47.182"
+        NEXUSPORT="8081"
     }
 	
     stages{
